@@ -34,3 +34,5 @@ mkdir(timeDir)
 copyName = os.path.basename(originFile)
 copyFile = joinPath(timeDir, copyName)
 shutil.copyfile(originFile, copyFile)
+
+print(copyName+" 已拷贝")
