@@ -6,7 +6,7 @@ import time
 for process in psutil.process_iter():
     try:
         # 判断进程是否为要查找的进程
-        if process.name() == "LetsPRO.exe":
+        if process.name() == "appcore.exe":
             # 输出该进程的 PID
             print(process.pid)
             pid = process.pid
@@ -25,4 +25,4 @@ kernel32.TerminateProcess(handle, -1)
 
 time.sleep(3)
 
-ctypes.windll.shell32.ShellExecuteW(None, "runas", "C:/Program Files (x86)/letsvpn/LetsPRO.exe", None, None, 0x20000)
+ctypes.windll.shell32.ShellExecuteW(None, "runas", "C:/krapp_client/appcore.exe", None, None, 0x20000)

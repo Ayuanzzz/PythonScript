@@ -8,12 +8,12 @@ ydl_opts = {
 ydl = yt_dlp.YoutubeDL(ydl_opts)
 
 # 指定要下载的视频URL
-base_url = "https://www.bilibili.com/video/BV1AX4y1w7Nt/?"
+base_url = "https://www.bilibili.com/video/BV16t411g7FR?"
 
 # 循环生成不同的URL
-for page_number in range(67, 85):  # 从p=2到p=4
+for page_number in range(2, 10):  # 从p=2到p=4
     # 构建完整的URL
-    url = base_url + f"p={page_number}&spm_id_from=pageDriver&vd_source=ddfdb2b3b3b380c6629deff6cd46520f"
+    url = base_url + f"p={page_number}&vd_source=ddfdb2b3b3b380c6629deff6cd46520f"
 
     # 输出生成的URL
     print(url)
